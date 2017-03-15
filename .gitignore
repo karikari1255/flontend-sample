@@ -1,0 +1,13 @@
+node_modules/
+app.js
+app.js.map
+.vscode/
+*.log
+*.log.*
+*.bak
+*.lock
+*.cache
+*.history
+*/tmp/
+
+

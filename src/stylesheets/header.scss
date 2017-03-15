@@ -1,0 +1,52 @@
+@import "common.scss";
+h1 {
+    font-size: 30px;
+}
+
+.globalMenu {
+    width: 90%;
+    padding: 0;
+    margin: 0 20;
+    list-style-type: none;
+    li {
+        width: 20%;
+        float: left;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        a {
+            width: auto;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 0;
+            text-decoration: none;
+            display: block;
+            border-left: #aabbff solid;
+            @include gradient(#33eedd, #88eedd, vertical);
+            &:hover {
+                @include gradient(#aaaadd, #aabbff, vertical);
+            }
+        }
+        &:first-child a {
+            border-left: 0;
+            @include border-top-left-radius(5px);
+            @include gradient(#33eedd, #88eedd, vertical);
+            &:hover {
+                @include gradient(#aaaadd, #aabbff, vertical);
+            }
+        }
+        &:last-child a {
+            border-left: #aabbff solid;
+            @include border-top-right-radius(5px);
+            @include gradient(#33eedd, #88eedd, vertical);
+            &:hover {
+                @include gradient(#aaaadd, #aabbff, vertical);
+            }
+        }
+    }
+    &:after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+}
